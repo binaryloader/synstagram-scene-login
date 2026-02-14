@@ -14,10 +14,10 @@ Follows CleanSwift's VIP pattern:
 
 ## Dependencies
 
-- BinaryLoaderDIContainer 1.0.4
-- BinaryLoaderExtensions 1.0.2
-- BinaryLoaderUI 1.0.2
-- APIService/Auth 1.0.6
+- BinaryLoaderDIContainer 1.0.5
+- BinaryLoaderExtensions 1.0.3
+- BinaryLoaderUI 1.0.3
+- APIService/Auth 1.0.8
 - Dependencies 1.0.2
 
 ## Installation
