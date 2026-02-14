@@ -1,0 +1,51 @@
+PODS:
+  - Alamofire (5.2.2)
+  - APIService/Auth (1.0.5):
+    - BinaryloaderExtensions (= 1.0.2)
+    - BinaryloaderNetwork (= 1.0.4)
+  - Dependencies/AlbumList (1.0.2)
+  - Dependencies/Login (1.0.2)
+  - BinaryloaderDIContainer (1.0.4)
+  - BinaryloaderExtensions (1.0.2)
+  - BinaryloaderNetwork (1.0.4):
+    - Moya (= 14.0.0)
+  - BinaryloaderUI/InsetTextField (1.0.2)
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+
+DEPENDENCIES:
+  - APIService/Auth (= 1.0.5)
+  - Dependencies/AlbumList (= 1.0.2)
+  - Dependencies/Login (= 1.0.2)
+  - BinaryloaderDIContainer (= 1.0.4)
+  - BinaryloaderExtensions (= 1.0.2)
+  - BinaryloaderUI/InsetTextField (= 1.0.2)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - Moya
+  https://github.com/binaryloader/iOS-Binaryloader-Module-CocoaPods-Specs.git:
+    - BinaryloaderDIContainer
+    - BinaryloaderExtensions
+    - BinaryloaderNetwork
+    - BinaryloaderUI
+  https://github.com/binaryloader/Synstagram-Module-CocoaPods-Specs.git:
+    - APIService
+    - Dependencies
+
+SPEC CHECKSUMS:
+  Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  APIService: 115f9ac1ba41c63be2d76acaa6c3433867701b49
+  Dependencies: 933a950d5cebc8f4005a243bcf900e9221060831
+  BinaryloaderDIContainer: d483286cb6ff116e5aaa750c9f6378c27247be10
+  BinaryloaderExtensions: 8949a6585d781d4e59a751d04a625b4036864c4d
+  BinaryloaderNetwork: 8d748e826fba5ff43e212445ef0174ee29d27c18
+  BinaryloaderUI: d67f1216b581a6ace8a1ce1e69785fed2511ea6f
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+
+PODFILE CHECKSUM: 5e6ebe21d561ef1c59ed1460ea401afce8f59e92
+
+COCOAPODS: 1.10.0

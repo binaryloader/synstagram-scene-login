@@ -1,0 +1,37 @@
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/binaryloader/iOS-Binaryloader-Module-CocoaPods-Specs.git'
+source 'https://github.com/binaryloader/Synstagram-Module-CocoaPods-Specs.git'
+
+platform :ios, '11.0'
+project 'LoginScene'
+inhibit_all_warnings!
+use_frameworks!
+
+def binaryloaderDIConatiner
+    pod 'BinaryloaderDIContainer', '1.0.4'
+end
+
+def binaryloaderExtensions
+    pod 'BinaryloaderExtensions', '1.0.2'
+end
+
+def binaryloaderUI
+    pod 'BinaryloaderUI/InsetTextField', '1.0.2'
+end
+
+def apiService
+    pod 'APIService/Auth', '1.0.5'
+end
+
+def dependency
+    pod 'Dependencies/Login', '1.0.2'
+    pod 'Dependencies/AlbumList', '1.0.2'
+end
+
+target :'LoginScene' do
+    binaryloaderDIConatiner
+    binaryloaderExtensions
+    binaryloaderUI
+    apiService
+    dependency
+end
