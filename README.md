@@ -14,9 +14,9 @@ Follows CleanSwift's VIP pattern:
 
 ## Dependencies
 
-- BinaryloaderDIContainer 1.0.4
-- BinaryloaderExtensions 1.0.2
-- BinaryloaderUI 1.0.2
+- BinaryLoaderDIContainer 1.0.4
+- BinaryLoaderExtensions 1.0.2
+- BinaryLoaderUI 1.0.2
 - APIService/Auth 1.0.6
 - Dependencies 1.0.2
 

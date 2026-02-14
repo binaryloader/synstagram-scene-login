@@ -7,7 +7,7 @@
 
 import Foundation
 import Dependencies
-import BinaryloaderDIContainer
+import BinaryLoaderDIContainer
 
 public struct LoginDependencyItem: Dependency, LoginDependency {
     

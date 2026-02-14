@@ -1,5 +1,5 @@
 source 'https://github.com/CocoaPods/Specs.git'
-source 'https://github.com/binaryloader/iOS-Binaryloader-Module-CocoaPods-Specs.git'
+source 'https://github.com/binaryloader/iOS-BinaryLoader-Module-CocoaPods-Specs.git'
 source 'https://github.com/binaryloader/Synstagram-Module-CocoaPods-Specs.git'
 
 platform :ios, '11.0'
@@ -8,15 +8,15 @@ inhibit_all_warnings!
 use_frameworks!
 
 def binaryloaderDIConatiner
-    pod 'BinaryloaderDIContainer', '1.0.4'
+    pod 'BinaryLoaderDIContainer', '1.0.4'
 end
 
 def binaryloaderExtensions
-    pod 'BinaryloaderExtensions', '1.0.2'
+    pod 'BinaryLoaderExtensions', '1.0.2'
 end
 
 def binaryloaderUI
-    pod 'BinaryloaderUI/InsetTextField', '1.0.2'
+    pod 'BinaryLoaderUI/InsetTextField', '1.0.2'
 end
 
 def apiService

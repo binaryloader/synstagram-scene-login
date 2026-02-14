@@ -6,8 +6,8 @@
 //
 
 import UIKit
-import BinaryloaderExtensions
-import BinaryloaderUI
+import BinaryLoaderExtensions
+import BinaryLoaderUI
 
 class PasswordView: UIView, TextFieldDataSource {
     
