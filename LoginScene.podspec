@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'LoginScene'
-  s.version = '1.0.10'
+  s.version = '1.0.11'
   s.license = { :type => 'MIT' }
   s.homepage = 'https://github.com/binaryloader/synstagram-scene-login'
   s.authors = { 'binaryloader' => '152517454+binaryloader@users.noreply.github.com' }
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.dependency 'BinaryLoaderDIContainer', '1.0.4'
   s.dependency 'BinaryLoaderExtensions', '1.0.2'
   s.dependency 'BinaryLoaderUI/InsetTextField', '1.0.2'
-  s.dependency 'APIService/Auth', '1.0.6'
+  s.dependency 'APIService/Auth', '1.0.7'
   s.dependency 'Dependencies/Login', '1.0.2'
   s.dependency 'Dependencies/AlbumList', '1.0.2'
 end
