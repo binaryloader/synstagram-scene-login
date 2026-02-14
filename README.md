@@ -17,7 +17,7 @@ Follows CleanSwift's VIP pattern:
 - BinaryloaderDIContainer 1.0.4
 - BinaryloaderExtensions 1.0.2
 - BinaryloaderUI 1.0.2
-- APIService/Auth 1.0.5
+- APIService/Auth 1.0.6
 - Dependencies 1.0.2
 
 ## Installation
