@@ -2,7 +2,7 @@
 //  PasswordView.swift
 //  LoginScene
 //
-//  Created by binaryloader on 2020/10/11.
+//  Created by BinaryLoader on 10/11/20.
 //
 
 import UIKit
@@ -10,25 +10,25 @@ import BinaryLoaderExtensions
 import BinaryLoaderUI
 
 class PasswordView: UIView, TextFieldDataSource {
-    
+
     @IBOutlet private weak var textField: InsetTextField!
-    
+
     var textDidChange: (() -> Void)?
-    
+
     var text: String? {
         return textField.text
     }
-    
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         initialize()
     }
-    
+
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         initialize()
     }
-    
+
     private func initialize() {
         loadFromNib()
         configureView()
@@ -36,11 +36,11 @@ class PasswordView: UIView, TextFieldDataSource {
 }
 
 extension PasswordView {
-    
+
     private func configureView() {
         configureTextField()
     }
-    
+
     private func configureTextField() {
         configureTextFieldPlaceHolder()
         configureTextFieldRightView()
@@ -49,50 +49,85 @@ extension PasswordView {
 }
 
 extension PasswordView {
-    
+
     private func configureTextFieldPlaceHolder() {
+        let font = UIHelper.getFont(
+            name: "AppleSDGothicNeo-Bold",
+            size: 13
+        )
         textField.attributedPlaceholder = NSMutableAttributedString(string: "비밀번호")
-            .set(font: UIHelper.getFont(name: "AppleSDGothicNeo-Bold", size: 13))
+            .set(font: font)
             .set(fontColor: #colorLiteral(red: 0.5215686275, green: 0.5215686275, blue: 0.5215686275, alpha: 1))
     }
-    
+
     private func configureTextFieldRightView() {
-        let rightViewSize = CGSize(width: 55, height: 40)
-        let seeButtonSize = CGSize(width: 25, height: 25)
-        
+        let rightViewSize = CGSize(
+            width: 55,
+            height: 40
+        )
+        let seeButtonSize = CGSize(
+            width: 25,
+            height: 25
+        )
+
         let seeButtonX = (rightViewSize.width - seeButtonSize.width) / 2
         let seeButtonY = (rightViewSize.height - seeButtonSize.height) / 2
-        let seeButtonOrigin = CGPoint(x: seeButtonX, y: seeButtonY)
-        
-        let seeButton = UIButton(frame: CGRect(origin: seeButtonOrigin, size: seeButtonSize))
+        let seeButtonOrigin = CGPoint(
+            x: seeButtonX,
+            y: seeButtonY
+        )
+
+        let seeButtonFrame = CGRect(
+            origin: seeButtonOrigin,
+            size: seeButtonSize
+        )
+        let seeButton = UIButton(frame: seeButtonFrame)
         seeButton.tintColor = #colorLiteral(red: 0.7490196078, green: 0.7490196078, blue: 0.7490196078, alpha: 1)
-        seeButton.addTarget(self, action: #selector(touchedEyeButton(_:)), for: .touchUpInside)
-        
+        seeButton.addTarget(
+            self,
+            action: #selector(touchedEyeButton(_:)),
+            for: .touchUpInside
+        )
+
         let eyeUnCheckImage = UIHelper.getImage(name: "EyeUnCheckedImage")
-        seeButton.setImage(eyeUnCheckImage, for: .normal)
-        
+        seeButton.setImage(
+            eyeUnCheckImage,
+            for: .normal
+        )
+
         let eyeCheckedImage = UIHelper.getImage(name: "EyeCheckedImage")
-        seeButton.setImage(eyeCheckedImage, for: .selected)
-        
-        let rightView = UIView(frame: CGRect(origin: .zero, size: rightViewSize))
+        seeButton.setImage(
+            eyeCheckedImage,
+            for: .selected
+        )
+
+        let rightViewFrame = CGRect(
+            origin: .zero,
+            size: rightViewSize
+        )
+        let rightView = UIView(frame: rightViewFrame)
         rightView.addSubview(seeButton)
-        
+
         textField.rightView = rightView
         textField.rightViewMode = .always
     }
-    
+
     private func configureTextFieldAction() {
-        textField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
+        textField.addTarget(
+            self,
+            action: #selector(textFieldDidChange),
+            for: .editingChanged
+        )
     }
 }
 
 extension PasswordView {
-    
+
     @objc private func touchedEyeButton(_ button: UIButton) {
         button.isSelected.toggle()
         textField.isSecureTextEntry = !button.isSelected
     }
-    
+
     @objc private func textFieldDidChange() {
         textDidChange?()
     }

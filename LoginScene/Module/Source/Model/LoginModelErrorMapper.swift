@@ -2,7 +2,7 @@
 //  LoginModelErrorMapper.swift
 //  LoginScene
 //
-//  Created by binaryloader on 2020/10/09.
+//  Created by BinaryLoader on 10/9/20.
 //
 
 import Foundation

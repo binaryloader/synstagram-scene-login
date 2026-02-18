@@ -2,17 +2,20 @@
 //  LoginModelDTOMapper.swift
 //  LoginScene
 //
-//  Created by binaryloader on 2020/10/09.
+//  Created by BinaryLoader on 10/9/20.
 //
 
 import Foundation
 import APIService
 
 struct LoginModelDTOMapper {
-    
+
     static func map(dto: AuthLoginModel.Response.DTO) -> LoginModel.Response.Entity {
-        return LoginModel.Response.Entity(success: dto.success,
-                                          sid: dto.data.sid,
-                                          username: dto.data.username)
+        let data = dto.data
+        return LoginModel.Response.Entity(
+            success: dto.success,
+            sid: data.sid,
+            username: data.username
+        )
     }
 }
