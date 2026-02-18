@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'LoginScene'
-  s.version = '1.0.13'
+  s.version = '1.0.14'
   s.license = { :type => 'MIT' }
   s.homepage = 'https://github.com/binaryloader/synstagram-scene-login'
   s.authors = { 'binaryloader' => '152517454+binaryloader@users.noreply.github.com' }
