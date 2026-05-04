@@ -1,12 +1,12 @@
-**English** | [한국어](docs/i18n/ko/README.md) | [日本語](docs/i18n/ja/README.md)
+[English](../../../README.md) | **한국어** | [日本語](../ja/README.md)
 
 # synstagram-scene-login
 
-Login scene module for the Synstagram iOS app, built with the VIP (View-Interactor-Presenter) architecture pattern and distributed as a CocoaPods pod.
+Synstagram iOS 앱의 로그인 화면 모듈이다. VIP(View-Interactor-Presenter) 아키텍처 패턴으로 구현했으며 CocoaPods pod로 배포한다.
 
 ## Architecture
 
-Follows CleanSwift's VIP pattern:
+CleanSwift의 VIP 패턴을 따른다.
 
 - **View**: `LoginViewController`, `ContentView`, `UsernameView`, `PasswordView`
 - **Interactor**: `LoginInteractor`, `LoginWorker`
@@ -24,7 +24,7 @@ Follows CleanSwift's VIP pattern:
 
 ## Installation
 
-Add the private spec repos and pod to your `Podfile`:
+`Podfile`에 비공개 spec 저장소와 pod를 추가한다.
 
 ```ruby
 source 'https://github.com/binaryloader/cocoapods-specs.git'
@@ -40,4 +40,4 @@ pod 'LoginScene'
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+이 프로젝트는 MIT 라이선스로 배포된다. 자세한 내용은 [LICENSE](../../../LICENSE) 파일을 참고한다.
